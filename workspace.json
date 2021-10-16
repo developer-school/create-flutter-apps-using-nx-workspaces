@@ -1,6 +1,217 @@
 {
   "version": 2,
-  "projects": {},
+  "projects": {
+    "hello-flutter": {
+      "root": "apps/hello-flutter",
+      "sourceRoot": "apps/hello-flutter/src",
+      "projectType": "application",
+      "targets": {
+        "analyze": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter analyze",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "clean": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter clean",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "format": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter format apps/hello-flutter/*",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter test",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "assemble": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter assemble",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "attach": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter attach",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "drive": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter drive",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "genL10n": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter gen-l10n",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "install": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter install",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "run": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter run",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "buildAar": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build aar",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "buildApk": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build apk",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "buildAppbundle": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build appbundle",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "buildBundle": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build bundle",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "buildIos": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build ios",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "buildIosFramework": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build ios-framework",
+            "cwd": "apps/hello-flutter"
+          }
+        },
+        "buildIpa": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build ipa",
+            "cwd": "apps/hello-flutter"
+          }
+        }
+      }
+    },
+    "say-hello": {
+      "root": "libs/say-hello",
+      "sourceRoot": "libs/say-hello/src",
+      "projectType": "library",
+      "targets": {
+        "analyze": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter analyze",
+            "cwd": "libs/say-hello"
+          }
+        },
+        "clean": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter clean",
+            "cwd": "libs/say-hello"
+          }
+        },
+        "format": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter format libs/say-hello/*",
+            "cwd": "libs/say-hello"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter test",
+            "cwd": "libs/say-hello"
+          }
+        },
+        "buildAar": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build aar",
+            "cwd": "libs/say-hello"
+          }
+        },
+        "buildApk": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build apk",
+            "cwd": "libs/say-hello"
+          }
+        },
+        "buildAppbundle": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build appbundle",
+            "cwd": "libs/say-hello"
+          }
+        },
+        "buildBundle": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build bundle",
+            "cwd": "libs/say-hello"
+          }
+        },
+        "buildIos": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build ios",
+            "cwd": "libs/say-hello"
+          }
+        },
+        "buildIosFramework": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build ios-framework",
+            "cwd": "libs/say-hello"
+          }
+        },
+        "buildIpa": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "flutter build ipa",
+            "cwd": "libs/say-hello"
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
   }
